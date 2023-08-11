@@ -1,5 +1,5 @@
-# 998tester
-An small tool for testing Microsoft's 998 modified image files. Can only preview already modified ribbon for now.
+# 998Toolbox
+An small tool for testing (and in future, modifying) Microsoft's 998 modified image files. Can only preview already modified ribbon for now.
 
 # Projects used
  - [WindowsRibbon](https://github.com/harborsiem/WindowsRibbon) for rendering UiRibbonRes in forms app.
