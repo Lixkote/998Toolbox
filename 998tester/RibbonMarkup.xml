@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application xmlns="http://schemas.microsoft.com/windows/2009/Ribbon">
+  <Application.Commands>
+    <Command Name="TabControls" Id="2" LabelTitle="Hello" />
+    <Command Name="ButtonGroup" Id="3" LabelTitle="Buttons (Small)" />
+    <Command Name="TabControlsPreview" Id="4" LabelTitle="Controls Preview" LabelDescription="This ribbon tab will let you preview your modified 998 ribbon's controls." />
+    <Command Name="ExampleButtonNormal" Id="5" LabelTitle="NormalB">
+      <Command.SmallImages>
+        <Image>Res/placeholder.bmp</Image>
+      </Command.SmallImages>
+    </Command>
+    <Command Name="ExampleToggleButtonNormal" Id="6" LabelTitle="ToggleB">
+      <Command.SmallImages>
+        <Image MinDPI="192">Res/placeholder.bmp</Image>
+      </Command.SmallImages>
+    </Command>
+    <Command Name="DropDownButton" Id="7" LabelTitle="DropDownB">
+      <Command.SmallImages>
+        <Image>Res/placeholder.bmp</Image>
+      </Command.SmallImages>
+    </Command>
+    <Command Name="SplitButton" Id="8" LabelTitle="SplitB">
+      <Command.SmallImages>
+        <Image>Res/placeholder.bmp</Image>
+      </Command.SmallImages>
+    </Command>
+    <Command Name="randombutton" Id="9" LabelTitle="SplitDropButton">
+      <Command.SmallImages>
+        <Image>Res/placeholder.bmp</Image>
+      </Command.SmallImages>
+    </Command>
+    <Command Name="TabButtons" Id="10" LabelTitle="Buttons " LabelDescription="This ribbon tab will let you preview your modified 998 ribbon's various buttons." />
+    <Command Name="ButtonGroupL" Id="11" LabelTitle="Buttons (Large) 1" />
+    <Command Name="ButtonGroupLL" Id="12" LabelTitle="Buttons (Large) 2" />
+    <Command Name="ButtL1" Id="13" LabelTitle="NormalBL">
+      <Command.SmallImages>
+        <Image>Res/placeholder.bmp</Image>
+      </Command.SmallImages>
+    </Command>
+    <Command Name="ButtL2" Id="14" LabelTitle="ToggleBL">
+      <Command.SmallImages>
+        <Image>Res/placeholder.bmp</Image>
+      </Command.SmallImages>
+    </Command>
+    <Command Name="ButtL3" Id="15" LabelTitle="DDBL">
+      <Command.SmallImages>
+        <Image>Res/placeholder.bmp</Image>
+      </Command.SmallImages>
+    </Command>
+    <Command Name="ButtL4" Id="16" LabelTitle="SPLITL">
+      <Command.SmallImages>
+        <Image>Res/placeholder.bmp</Image>
+      </Command.SmallImages>
+    </Command>
+    <Command Name="ButtL5" Id="17" LabelTitle="Henlo">
+      <Command.SmallImages>
+        <Image MinDPI="192">Res/placeholder.bmp</Image>
+      </Command.SmallImages>
+    </Command>
+    <Command Name="GalleriesM" Id="18" LabelTitle="Galleries (Itemed)" LabelDescription="h" />
+    <Command Name="MiscTab" Id="19" LabelTitle="Misc Controls" />
+    <Command Name="Misc1" Id="20" LabelTitle="Misc 1" />
+    <Command Name="colorp" Id="21" LabelTitle="Color Picker" />
+    <Command Name="ddgal" Id="22" LabelTitle="Drop Down Gallery" />
+    <Command Name="GalGroup1" Id="23" />
+    <Command Name="GalGroup2" Id="24" />
+    <Command Name="GalGroup3" Id="25" LabelTitle="In-Ribbon Gallery" />
+    <Command Name="GalGroup4" Id="26" />
+    <Command Name="spgal" Id="27" LabelTitle="Split Button Gallery" />
+    <Command Name="CalleriesC" Id="28" LabelTitle="Galleries (Commanded)" />
+    <Command Name="inribgal" Id="29" LabelTitle="In Ribbon Gallery" />
+    <Command Name="colorpic" Id="30" LabelTitle="colorpicker1" />
+    <Command Name="checkb" Id="31" LabelTitle="CheckBox" />
+    <Command Name="combob" Id="32" LabelTitle="ComboBox" />
+    <Command Name="fidgetspinner" Id="33" LabelTitle="Spinner" />
+    <Command Name="fontctrl" Id="34" LabelTitle="Font Control" />
+    <Command Name="galleriesstar" Id="35" LabelTitle="Example Button">
+      <Command.SmallImages>
+        <Image>Res/placeholder.bmp</Image>
+      </Command.SmallImages>
+    </Command>
+    <Command Name="ExampleFileButton" Id="36" LabelTitle="Example" />
+    <Command Name="hbutton" Id="37" LabelTitle="Example Button" />
+  </Application.Commands>
+  <Application.Views>
+    <Ribbon>
+      <Ribbon.ApplicationMenu>
+        <ApplicationMenu>
+          <MenuGroup CommandName="ExampleFileButton">
+            <Button />
+          </MenuGroup>
+        </ApplicationMenu>
+      </Ribbon.ApplicationMenu>
+      <Ribbon.QuickAccessToolbar>
+        <QuickAccessToolbar />
+      </Ribbon.QuickAccessToolbar>
+      <Ribbon.Tabs>
+        <Tab CommandName="TabButtons">
+          <Group CommandName="ButtonGroup">
+            <Button CommandName="ExampleButtonNormal" />
+            <ToggleButton CommandName="ExampleToggleButtonNormal" />
+            <DropDownButton CommandName="DropDownButton" />
+            <SplitButton CommandName="SplitButton">
+              <Button CommandName="randombutton" />
+            </SplitButton>
+          </Group>
+          <Group CommandName="ButtonGroupL" SizeDefinition="TwoButtons">
+            <Button CommandName="ButtL1" />
+            <ToggleButton CommandName="ButtL2" />
+          </Group>
+          <Group CommandName="ButtonGroupLL" SizeDefinition="TwoButtons">
+            <DropDownButton CommandName="ButtL3" />
+            <SplitButton CommandName="ButtL4">
+              <Button CommandName="ButtL5" />
+            </SplitButton>
+          </Group>
+        </Tab>
+        <Tab CommandName="MiscTab">
+          <Group CommandName="Misc1">
+            <CheckBox CommandName="checkb" />
+            <ComboBox CommandName="combob" />
+            <Spinner CommandName="fidgetspinner" />
+            <DropDownColorPicker CommandName="colorp" ChipSize="Medium" Columns="1" ThemeColorGridRows="1" StandardColorGridRows="1" RecentColorGridRows="1" />
+          </Group>
+        </Tab>
+        <Tab CommandName="GalleriesM">
+          <Group CommandName="GalGroup1">
+            <DropDownGallery CommandName="ddgal">
+              <Button CommandName="galleriesstar" />
+              <Button CommandName="galleriesstar" />
+              <Button CommandName="galleriesstar" />
+            </DropDownGallery>
+          </Group>
+          <Group CommandName="GalGroup2">
+            <SplitButtonGallery CommandName="spgal">
+              <Button CommandName="galleriesstar" />
+              <Button CommandName="galleriesstar" />
+              <Button CommandName="galleriesstar" />
+            </SplitButtonGallery>
+          </Group>
+          <Group CommandName="GalGroup2">
+            <InRibbonGallery CommandName="inribgal">
+              <Button CommandName="galleriesstar" />
+              <Button CommandName="galleriesstar" />
+              <Button CommandName="galleriesstar" />
+            </InRibbonGallery>
+          </Group>
+        </Tab>
+        <Tab CommandName="CalleriesC">
+          <Group CommandName="GalGroup1">
+            <DropDownGallery Type="Commands">
+              <Button CommandName="galleriesstar" />
+              <Button CommandName="galleriesstar" />
+              <Button CommandName="galleriesstar" />
+            </DropDownGallery>
+          </Group>
+          <Group>
+            <SplitButtonGallery Type="Commands">
+              <Button CommandName="galleriesstar" />
+              <Button CommandName="galleriesstar" />
+              <Button CommandName="galleriesstar" />
+            </SplitButtonGallery>
+          </Group>
+          <Group>
+            <InRibbonGallery Type="Commands">
+              <Button CommandName="galleriesstar" />
+              <Button CommandName="galleriesstar" />
+              <Button CommandName="galleriesstar" />
+            </InRibbonGallery>
+          </Group>
+          <Group>
+            <FontControl />
+          </Group>
+        </Tab>
+      </Ribbon.Tabs>
+    </Ribbon>
+    <ContextPopup />
+  </Application.Views>
+</Application>
+<!--ResourceName Value="APPLICATION"-->
